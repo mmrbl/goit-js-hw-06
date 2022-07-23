@@ -8,14 +8,14 @@ const counter = document.querySelector(`#value`);
 
 let counterValue = 0;
 
-const decrementFn = () => {
+const onDecrementButtonClick = () => {
   counterValue -= 1;
   counter.textContent = counterValue;
 };
-decrement.addEventListener("click", decrementFn);
+decrement.addEventListener("click", onDecrementButtonClick);
 
-const incrementFn = () => {
+const onIncrementButtonClick = () => {
   counterValue += 1;
   counter.textContent = counterValue;
 };
-increment.addEventListener("click", incrementFn);
+increment.addEventListener("click", onIncrementButtonClick);
