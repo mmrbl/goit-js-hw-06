@@ -11,7 +11,8 @@ const formValidation = event => {
   }
 
   console.log(
-    `${event.currentTarget.elements.email.name}: ${event.currentTarget.elements.email.value}, ${event.currentTarget.elements.password.name}: ${event.currentTarget.elements.password.value} `
+    `${event.currentTarget.elements.email.name}: ${event.currentTarget.elements.email.value},
+     ${event.currentTarget.elements.password.name}: ${event.currentTarget.elements.password.value} `
   );
 
   event.currentTarget.reset();
