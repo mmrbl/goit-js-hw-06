@@ -10,9 +10,12 @@ const formValidation = event => {
     return alert('Для завершення реєстрації, заповни усі поля.');
   }
 
+  const email = event.currentTarget.elements.email;
+  const password = event.currentTarget.elements.password;
+
   console.log(
-    `${event.currentTarget.elements.email.name}: ${event.currentTarget.elements.email.value},
-     ${event.currentTarget.elements.password.name}: ${event.currentTarget.elements.password.value} `
+    `${email.name}: ${email.value}
+    ${password.name}: ${password.value} `
   );
 
   event.currentTarget.reset();
