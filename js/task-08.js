@@ -12,11 +12,12 @@ const formValidation = event => {
 
   const email = event.currentTarget.elements.email;
   const password = event.currentTarget.elements.password;
+  const dataLogin = {
+    email: email.value,
+    password: password.value,
+  };
 
-  console.log(
-    `${email.name}: ${email.value}
-    ${password.name}: ${password.value} `
-  );
+  console.log(dataLogin);
 
   event.currentTarget.reset();
 };
